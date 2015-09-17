@@ -1,0 +1,170 @@
+@import "bourbon";
+@import "neat";
+@import "nucleo-outline";
+@import "nucleo-glyph";
+
+@import "fonts";
+
+$font: 'Roboto', 'Helvetica Neue', sans-serif;
+$font-size: 26px;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 600;
+
+$color-text: #fff;
+$color-link: #247FFA;
+$color-details: #00FF8D;
+
+$site-width: 750px;
+$site-height-offset: 120px;
+$profile-picture-size: 280px;
+
+
+//
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $color-text;
+  font-family: $font;
+  font-size: $font-size;
+  font-weight: 300;
+  margin: 0;
+  border-top: $site-height-offset solid white;
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+h1 {
+  font-weight: $font-light;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  max-width: $site-width;
+  margin: -($site-height-offset/2) auto 0;
+
+  header {
+    margin: auto;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 4px;
+      background: fade-out($color-text, .5);
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      margin-left: -10px;
+      border-radius: 6px
+    }
+
+    p {
+      margin: 1em auto;
+      max-width: floor($site-width/1.7);
+    }
+  }
+
+  h1 {
+    margin-bottom: .25em;
+  }
+}
+
+p {
+  font-size: .7em;
+  line-height: 1.5;
+  color: $color-text;
+  color: fade-out($color-text, .3);
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  .nc-icon-glyph {
+    color: lighten($color-link, 15%);
+  }
+
+  &:hover {
+    color: darken(saturate($color-link, 20%), 15%);
+  }
+
+  &:visited {
+    color: $color-link;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: .7em;
+  margin: 2em 0;
+  padding: 0;
+
+  li {
+    margin-bottom: .5em;
+  }
+}
+
+.nc-icon-glyph {
+  position: relative;
+  margin-left: .5em;
+  top: 4px;
+}
+
+.profile-picture {
+  max-width: $profile-picture-size;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 20px fade-out(black, .8);
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.user-details {
+  @include outer-container;
+
+  > ul {
+    padding: .5em;
+  }
+
+  h3 {
+    font-size: .65em;
+    margin: 2px 0 .5em;
+    text-transform: uppercase;
+    font-weight: $font-light;
+    letter-spacing: .1em;
+    color: fade-out(#fff, .2);
+  }
+}
+
+.user-contact {
+  @include span-columns(6);
+  text-align: right;
+}
+
+.user-meta {
+  @include span-columns(6);
+  color: $color-details;
+  text-align: left;
+
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+

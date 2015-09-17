@@ -1,0 +1,38 @@
+<div class="profile-picture">
+<img src="{{{ pic }}}" alt="{{ name }}">
+</div>
+<header>
+  <h1>{{ name }}</h1>
+  <p>{{ bio }}</p>
+</header>
+<div class="user-details">
+
+  <ul class="user-contact">
+    <li>
+      <a href="mailto:{{ email }}">
+        {{ email }}<span class="nc-icon-glyph ui-1_email-85"></span>
+      </a>
+    </li>
+    <li>
+      <a href="github.com/{{ github }}">
+        github.com/{{ github }}<span class="nc-icon-glyph socials-1_logo-github"></span>
+      </a>
+    </li>
+    <li>
+      <a href="twitter.com/{{ twitter }}">
+        @{{ twitter }}<span class="nc-icon-glyph socials-1_logo-twitter"></span>
+      </a>
+    </li>
+  </ul>
+
+  <ul class="user-meta">
+    <li>
+      <h3>Location</h3>
+      {{ location }}
+    </li>
+    <li>
+      <h3>Languages I use</h3>
+      {{ languages }}
+    </li>
+  </ul>
+</div>

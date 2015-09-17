@@ -1,0 +1,45 @@
+{
+  "name": "Herokai Instant Profile",
+  "description": "A e-card that can be customized & deployed in moments.",
+  "keywords": [
+    "heroku",
+    "heroku-button"
+  ],
+  "env": {
+    "NAME": {
+      "description": "The hardest question on this quiz, your name.",
+      "required": true
+    },
+    "TWITTER_HANDLE": {
+      "description": "Your Twitter handle. No need to include the @",
+      "required": true
+    },
+    "TWITTER_BIO": {
+      "description": "Your Twitter bio.",
+      "required": true
+    },
+    "TWITTER_PIC": {
+      "description": "A link to your Twitter profile pic.",
+      "required": true
+    },
+    "GITHUB_USERNAME": {
+      "description": "Your GitHub username. Again no need to include the @",
+      "required": true
+    },
+    "EMAIL": {
+      "description": "Your Email address.",
+      "required": true
+    },
+    "LOCATION": {
+      "description": "Where are you from?",
+      "value": "San Francisco, CA",
+      "required": true
+    },
+    "LANGUAGES": {
+      "description": "What are your favorite languages?",
+      "value": "JavaScript, obviously."
+    }
+  },
+  "website": "https://github.com/mattcreager/herokai",
+  "repository": "https://github.com/mattcreager/herokai"
+}

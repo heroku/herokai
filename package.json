@@ -1,0 +1,51 @@
+{
+  "name": "herokai",
+  "version": "0.1.0",
+  "description": "Supplement your introduction",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "standard",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattcreager/herokai"
+  },
+  "author": {
+    "name": "Matt Creager",
+    "email": "creager@heroku.com",
+    "url": "https://github.com/mattcreager/herokai"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattcreager/herokai/issues"
+  },
+  "homepage": "https://github.com/mattcreager/herokai",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-clean-dest": "^0.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "node-bourbon": "^4.2.3",
+    "node-neat": "^1.7.2",
+    "node-sass": "^3.2.0",
+    "normalize.css": "^3.0.3"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules",
+      "dist"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1"
+  }
+}
